@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tuguldur Ganbaatar — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  @page{size:A4;margin:0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Source Sans 3",Helvetica,Arial,sans-serif;color:#1a1a1a;font-size:10pt;line-height:1.45;background:#fff}
+  .page{width:210mm;height:297mm;padding:18mm 20mm 16mm;display:flex;flex-direction:column;gap:6.5mm;overflow:hidden}
+
+  header{display:grid;grid-template-columns:1fr 24mm;gap:8mm;align-items:start}
+  h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:24pt;line-height:1.1;letter-spacing:-.01em}
+  .title{margin-top:1.2mm;font-size:11pt;color:#555}
+  .contact{margin-top:3mm;font-size:9.2pt;color:#333;display:flex;flex-wrap:wrap;gap:.6mm 0}
+  .contact span:not(:last-child)::after{content:"·";margin:0 2.2mm;color:#aaa}
+  header img{width:24mm;height:30mm;object-fit:cover;object-position:center 25%;filter:grayscale(1)}
+
+  .summary{font-size:10pt;color:#333;max-width:150mm}
+
+  section{display:flex;flex-direction:column;gap:2.8mm}
+  h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:11pt;padding-bottom:1.2mm;border-bottom:.3mm solid #1a1a1a}
+  .row{display:flex;justify-content:space-between;gap:6mm;align-items:baseline}
+  .row h3{font-size:10.4pt;font-weight:600}
+  .row h3 span{font-weight:400;color:#555}
+  .date{font-size:9.2pt;color:#555;white-space:nowrap}
+  .item{display:flex;flex-direction:column;gap:.8mm}
+  ul{padding-left:4.2mm;color:#333}
+  li{margin-top:.5mm}
+  .muted{color:#555}
+  .skills{display:grid;grid-template-columns:30mm 1fr;gap:1.2mm 4mm}
+  .skills dt{font-weight:600}
+  .skills dd{color:#333}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <h1>Tuguldur Ganbaatar</h1>
+      <div class="title">System Administrator</div>
+      <div class="contact">
+        <span>+976 8851 7711</span>
+        <span>ganbaatartuguldur0x1@gmail.com</span>
+        <span>linkedin.com/in/tuguldur-ganbaatar-2a9261274</span>
+        <span>feds.lol/Tuguldur</span>
+      </div>
+    </div>
+    <img src="photo.jpg" alt="">
+  </header>
+
+  <p class="summary">System administrator at Capitron Bank of Mongolia, working with Linux servers, Docker and Kubernetes, and CI/CD pipelines built on GitLab, Jenkins and ArgoCD. Holds a bachelor's degree in Information Network &amp; Security from MUST (2025), with a background in information security and CTF competitions.</p>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="row"><h3>System Administrator <span>— Capitron Bank of Mongolia</span></h3><span class="date">1 yr 7 mos</span></div>
+      <ul>
+        <li>Responsible for the core banking system and its subsystems.</li>
+        <li>Administered Linux servers and operating systems across the bank's environments.</li>
+        <li>Ran containerized workloads on Docker and Kubernetes; supported JBoss Application Server.</li>
+        <li>Automated digital banking updates with CI/CD auto-deploy through GitLab, Jenkins and ArgoCD.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="row"><h3>Information System Security Intern <span>— Khan Bank, IT Paid Internship</span></h3><span class="date">Jun – Aug 2024</span></div>
+      <ul>
+        <li>Information security research and communication within the bank's security team.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="row"><h3>President <span>— MUST Computer &amp; Communication Security Club</span></h3><span class="date">2021 – 2025</span></div>
+      <ul>
+        <li>Led the university security club; lead organizer of MUST CTF and organizer of SICT CTF 2022.</li>
+        <li>Co-organized BankSec 2024 with the Mongolian Bankers Association.</li>
+        <li>Volunteered at MNSEC 2023 and Haruul Zangi U18 2023.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="item">
+      <div class="row"><h3>Cloud Cert Prep <span>— personal project</span></h3></div>
+      <ul>
+        <li>Gamified study platform for Kubernetes and AWS certifications: hands-on simulated labs checked instantly in the browser, exams, spaced review, XP levels and streaks, in English and Mongolian.</li>
+        <li>27 courses with 683 questions and labs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="item">
+      <div class="row"><h3>Bachelor of Science, Information Network &amp; Security</h3><span class="date">2021 – 2025</span></div>
+      <div class="muted">Mongolian University of Science and Technology, School of Information and Communication Technology</div>
+      <ul>
+        <li>Thesis: <i>Analysis and Defense Against Rootkit Attacks</i>. Built a Linux rootkit detector (C kernel module and Python CLI) that checks syscall-table hooks, hidden processes and modules, IDT/SSDT entries and hidden files.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="row"><h3>High School Diploma <span>— Ireedui Complex School No. 2</span></h3><span class="date">2014 – 2021</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Infrastructure</dt><dd>Linux, Docker, Kubernetes, JBoss, Networking</dd>
+      <dt>CI/CD</dt><dd>GitLab CI/CD, Jenkins, ArgoCD</dd>
+      <dt>Security</dt><dd>Information security, web pentesting, digital forensics, CTF</dd>
+      <dt>Programming</dt><dd>Python, Bash, C</dd>
+      <dt>Languages</dt><dd>Mongolian (native), English</dd>
+    </dl>
+  </section>
+</div>
+</body>
+</html>
