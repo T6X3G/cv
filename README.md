@@ -9,7 +9,14 @@ public/                      site served by nginx
 resume/
   cv.html, photo.jpg         source of the PDF
 Dockerfile
+.github/workflows/pages.yml  publishes public/ to GitHub Pages
 ```
+
+## Publish (GitHub Pages)
+
+Every push to `main` deploys `public/` via GitHub Actions.
+One-time setup: repo **Settings → Pages → Source: GitHub Actions**.
+The site is then live at https://t6x3g.github.io/cv/
 
 ## Run locally
 
@@ -22,7 +29,8 @@ docker run -d --name tuguldur-cv -p 3000:80 tuguldur-cv
 ## Rebuild the PDF
 
 ```sh
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
+# macOS: use "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" instead
+google-chrome --headless=new \
   --no-pdf-header-footer --print-to-pdf="public/Tuguldur-Ganbaatar-CV.pdf" \
   "file://$PWD/resume/cv.html"
 ```
